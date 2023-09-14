@@ -9,7 +9,7 @@
 }
 
 #app > h1 {
-  color: #000;
+  color: #996DFF;
   margin-top: 10px;
   margin-bottom: 0;
   font-weight: 800;
@@ -28,10 +28,11 @@
   text-align: justify;
   width: 512px;
   margin-top: -5px;
+  font-family: 'IBM Plex Mono', monospace;
   
 }
 
 #app .placeholder{
-  color: #474747;
+  color: #7C7C8A;
   user-select: none;
 }
