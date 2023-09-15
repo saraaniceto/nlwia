@@ -9,7 +9,7 @@
 }
 
 #app > h1 {
-  color: #996DFF;
+  color: #000;
   margin-top: 10px;
   margin-bottom: 0;
   font-weight: 800;
@@ -33,6 +33,6 @@
 }
 
 #app .placeholder{
-  color: #7C7C8A;
+  color: #474747;
   user-select: none;
 }

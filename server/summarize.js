@@ -3,13 +3,11 @@ import { summaryExample } from "./utils/summary.js"
 
 export async function summarize(text) {
   try{
-    // return summaryExample
-
     console.log("Realizando o resumo...")
     
     const generator = await pipeline(
       "summarization",
-      "Xenova/distilbart-cnn-12-6"
+      "Xenova/distilbart-cnn-6-6"
     )
 
     const output = await generator(text)

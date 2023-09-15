@@ -12,18 +12,17 @@ form.addEventListener("submit", async (event) => {
   const videoURL = input.value
   
   if(!videoURL.includes("shorts")){
-    console.log("Não é um short!")
-    return content.textContent = "Esse vídeo não parece ser um short."
+    return content.textContent = "Esse vídeo não é um YouTube Short. Selecione um vídeo da seção Shorts no YouTube."
   }
 
   const [_, params] = videoURL.split("/shorts/")
   const [videoId] = params.split("?si")
 
-  content.textContent = "Obtendo o texto do áudio..."
+  content.textContent = "Obtendo a transcrição do áudio..."
   
   const transcription = await server.get("/summary/" + videoId)
 
-  content.textContent = "Realizando o resumo..."
+  content.textContent = "Resumindo o conteúdo..."
 
   const summary = await server.post("/summary", {
     text: transcription.data.result
