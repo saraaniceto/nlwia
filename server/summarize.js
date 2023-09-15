@@ -9,7 +9,7 @@ export async function summarize(text) {
     
     const generator = await pipeline(
       "summarization",
-      "Xenova/distilbart-cnn-12-3"
+      "Xenova/distilbart-cnn-12-6"
     )
 
     const output = await generator(text)
